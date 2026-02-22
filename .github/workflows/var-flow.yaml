@@ -4,7 +4,7 @@ on: [push]
 jobs:
   Explore-Variable-Flow:
     runs-on: ubuntu-latest
-    environment: "production"
+    environment: "staging"
     steps:
       - name: Check the env/var and secret value
         run: |
