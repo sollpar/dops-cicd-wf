@@ -7,6 +7,6 @@ jobs:
 
       steps:
         -name: Check the env/var and secret values
-         run: |
-            echo '${{ vars.STATUS }}'
-            echo '${{ secrets.PASSWORD }}'
+        run: |
+          echo '${{ vars.STATUS }}'
+          echo '${{ secrets.PASSWORD }}'
