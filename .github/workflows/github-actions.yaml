@@ -18,4 +18,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: uname -a
       - run: df -h
-      - run: sudo apt install python3 -y
+      - run: sudo apt install azurecli -y
+      - run: az --version
