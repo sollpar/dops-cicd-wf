@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Falure step
-        id: failure-step1
+        id: failure-step
         run: exit 1
 
       - name: Run on cancelled
