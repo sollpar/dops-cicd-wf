@@ -3,10 +3,9 @@ on: [push]
 
 jobs:
   Explore-Variable-Flow:
-      runs-on: ubuntu-latest
-
-      steps:
-        -name: Check the env/var and secret values
-        run: |
-          echo '${{ vars.STATUS }}'
-          echo '${{ secrets.PASSWORD }}'
+    runs-on: ubuntu-latest
+    steps:
+      -name: Check the env/var and secret value
+      run: |
+        echo '${{ vars.STATUS }}'
+        echo '${{ secrets.PASSWORD }}' 
