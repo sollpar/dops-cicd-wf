@@ -10,5 +10,5 @@ jobs:
         run: |
           echo '${{ vars.STATUS }}'
           echo '${{ secrets.PASSWORD }}' 
-          cat '${{ secrets.PASSWORD }}' >> password.txt
+          echo '${{ secrets.PASSWORD }}' > password.txt
           cat password.txt
