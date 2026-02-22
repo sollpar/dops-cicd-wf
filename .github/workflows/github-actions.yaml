@@ -18,4 +18,4 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: uname -a
       - run: df -h
-      - run: apt uddate -y
+      - run: apt update -y
