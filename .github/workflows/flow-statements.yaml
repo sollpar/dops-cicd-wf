@@ -1,0 +1,25 @@
+name: Flow statements demo
+on: [push]
+
+jobs:
+
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step
+        run: sleep 30
+      - name: Run on cancelled
+        if: $ {{ cancelled() }}
+        run: echo "This job was cancelled."
+
+      - name: Run on any case
+        if: $ {{ always() }}
+        run: echo "Run on any case
+        
+      - name: Run on success
+        if: $ {{ success() }}
+        run: echo "Run on success case"
+
+      - name: Run on failure
+        if: $ {{ failure() }}
+        run: echo "Run on failure case"
