@@ -12,3 +12,4 @@ jobs:
         with:
           node-version: '14'
       - run: ls -la
+      - run: cat Readme.md
