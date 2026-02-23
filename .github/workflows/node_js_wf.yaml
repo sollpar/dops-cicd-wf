@@ -15,5 +15,4 @@ jobs:
       - name: Display cached files
         run: echo '${{ steps.cache-step.outputs }}'
       - name: Install node_modules dependencies
-        run: nam install 
-        
+        run: npm install 
