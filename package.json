@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sollpar/dops-cicd-wf#readme",
   "dependencies": {
-    "axios": "^1.13.5"
+    "axios": "^1.13.5",
+    "swiper": "^12.1.2"
   }
 }
