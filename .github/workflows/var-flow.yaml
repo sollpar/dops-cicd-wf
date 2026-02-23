@@ -1,5 +1,5 @@
 name: Variable Flow Demo
-on: [push]
+on:
 
 jobs:
   Explore-Variable-Flow:
