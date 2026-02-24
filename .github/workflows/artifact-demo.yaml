@@ -11,7 +11,7 @@ jobs:
       - name: Upload result file
         uses: actions/upload-artifact@v4
         with:
-          name: math-result
+          name: math-result-step1
           path: math-result.txt
 
   intrmediate-job:
@@ -21,7 +21,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: math-result
+          name: math-result-step1
       - name: Math expresion
         run: |
           value=`cat math-result.txt`
@@ -29,7 +29,7 @@ jobs:
       - name: Upload result file
         uses: actions/upload-artifact@v4
         with:
-          name: math-result
+          name: math-result-step2
           path: math-result.txt
 
   second-job:
@@ -39,9 +39,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: math-result
+          name: math-result-step2
       - name: Print file
         run: |
           value=`cat math-result.txt`
           echo $value
-          
