@@ -1,0 +1,14 @@
+name: Artifact demo
+on: push
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Math expresion
+        run: expr 2 + 2 > math-result.txt
+      - name: Upload result file
+        uses: actions/upload-artifact@v3
+        with:
+          name: math-result
+          path: math-result.txt
