@@ -6,7 +6,7 @@ on:
         description: "Title"
         type: string
         default: "Enter title"
-        requared: false
+        required: false
          
 jobs:
   console-log:
