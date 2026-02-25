@@ -1,6 +1,6 @@
 name: Action wf testing
 on: 
-  workflow_dipatch:
+  workflow_dispatch:
     inputs:
       title: 
         description: "Title"
