@@ -12,3 +12,7 @@ jobs:
     uses: ./.github/workflows/action.yaml
     with: 
       title: ${{ inputs.title }}
+  call-external-workflow:
+    uses: sollpar/w-flows/.github/workflows/workflow.yml@main
+    secrets:
+      PASSWORD: $ {{ secrets.PASSWORD }}
