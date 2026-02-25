@@ -4,7 +4,7 @@ on:
     inputs:
       title: 
         description: "Title"
-        type: sring
+        type: string
         default: "Enter title"
         requared: false
 jobs:
