@@ -1,0 +1,16 @@
+name: Action Workflow
+on:
+  workflow_call:
+    inputs:
+      title: 
+        description: "Title"
+        type: sring
+        default: "Enter title"
+        requared: false
+         
+jobs:
+  console-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Title
+        run: echo '${{ inputs.title }}'

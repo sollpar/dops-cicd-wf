@@ -1,0 +1,13 @@
+name: Action wf testing
+on: 
+  workflow_dipatch:
+    inputs:
+      title: 
+        description: "Title"
+        type: sring
+        default: "Enter title"
+        requared: false
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/action.yaml
+    with: ${{ inputs.title }}
