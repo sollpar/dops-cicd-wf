@@ -22,5 +22,5 @@ jobs:
     outputs:
       date: $ {{ steps.date-setup.outputs.date }}
     steps:
-      run: echo "date=$(date)" ?>> $GITHUB_OUTPUT
-      id: date-setup
+      - run: echo "date=$(date)" ?>> $GITHUB_OUTPUT
+        id: date-setup
